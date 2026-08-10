@@ -8,12 +8,19 @@ Complete as of 8/10/26
 
 
 To be completed/updated
--All of Labs
--Medical Documents
--PMC Personnel Files
--User Documentation
--Test Documentation
--Technical Documentation
--Project Documentation
+-All of Labs  
+
+-Medical Documents  
+
+-PMC Personnel Files  
+
+-User Documentation  
+
+-Test Documentation  
+
+-Technical Documentation  
+
+-Project Documentation  
+
 
 If I'm missing something throw a pull request in or DM on discord if you can/want. 
