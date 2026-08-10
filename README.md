@@ -25,5 +25,7 @@ To be completed/updated
 
 -Project Documentation  
 
+-New map for Ground Zero
+
 
 If I'm missing something throw a pull request in or DM on discord if you can/want. 
