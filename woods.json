@@ -1,0 +1,7 @@
+{
+  "src": "woods_overhead.png",
+  "alt": "Woods Overhead",
+  "hotspots": [
+    {"id": "woods-doc", "x": 62, "y": 50, "title": "Woods Document", "description": "Example point of interest in Woods."}
+  ]
+}

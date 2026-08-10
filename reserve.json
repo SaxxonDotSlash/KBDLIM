@@ -1,0 +1,7 @@
+{
+  "src": "reserve_overhead.png",
+  "alt": "Reserve Overhead",
+  "hotspots": [
+    {"id": "reserve-doc", "x": 52, "y": 35, "title": "Reserve Document", "description": "Example location marker for Reserve."}
+  ]
+}

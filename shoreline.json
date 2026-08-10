@@ -1,0 +1,7 @@
+{
+  "src": "shoreline_overhead.png",
+  "alt": "Shoreline Overhead",
+  "hotspots": [
+    {"id": "shoreline-doc", "x": 48, "y": 42, "title": "Shoreline Document", "description": "Example location marker for Shoreline."}
+  ]
+}

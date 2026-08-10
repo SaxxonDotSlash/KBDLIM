@@ -1,0 +1,7 @@
+{
+  "src": "streetsOfTarkov_overhead.jpg",
+  "alt": "Streets of Tarkov Overhead",
+  "hotspots": [
+    {"id": "sot-doc", "x": 50, "y": 45, "title": "Streets Document", "description": "Example location marker for Streets of Tarkov."}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "src": "groundZero_overhead.png",
+  "alt": "Ground Zero Overhead",
+  "hotspots": [
+    {"id": "groundzero-doc", "x": 50, "y": 45, "title": "Ground Zero Document", "description": "Example location marker for Ground Zero."}
+  ]
+}

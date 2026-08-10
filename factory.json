@@ -1,0 +1,7 @@
+{
+  "src": "factory_overhead.jpg",
+  "alt": "Factory Overhead",
+  "hotspots": [
+    {"id": "factory-doc", "x": 55, "y": 45, "title": "Factory Document", "description": "Example item spawn location on Factory."}
+  ]
+}

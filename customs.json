@@ -1,0 +1,40 @@
+{
+  "src": "customs_overhead.png",
+  "alt": "Customs Overhead",
+  "hotspots": [
+    {
+      "id": "customs-doc",
+      "x": 67.9,
+      "y": 52.9,
+      "title": "Document Cache",
+      "description": "Example document location in Customs."
+    },
+    {
+      "id": "customs-cloth",
+      "x": 28,
+      "y": 60,
+      "title": "Doc spawn",
+      "description": "Interactive point for a clothing spawn nearby.",
+      "imageUrl": ""
+    },
+    {
+      "id": "marker-1786386491415",
+      "title": "New Marker",
+      "description": "New marker detion.",
+      "imageUrl": "",
+      "x": 59,
+      "y": 56.5
+    },
+    {
+      "id": "marker-1786387240027",
+      "title": "New Marker",
+      "description": "New marker description.",
+      "imageUrl": "",
+      "color": "#ffcc00",
+      "size": 20,
+      "shape": "circle",
+      "x": 42.9,
+      "y": 49.6
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "src": "interchange_overhead.jpg",
+  "alt": "Interchange Overhead",
+  "hotspots": [
+    {"id": "interchange-doc", "x": 43, "y": 52, "title": "Interchange Document", "description": "Example location marker for Interchange."}
+  ]
+}
