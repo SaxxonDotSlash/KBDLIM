@@ -11,9 +11,7 @@ To be completed/updated
 
 -All of Labs  
 
--All of Labrynth
-
--Medical Documents  
+-All of Labrynth  
 
 -PMC Personnel Files  
 
