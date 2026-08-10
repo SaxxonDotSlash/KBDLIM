@@ -15,8 +15,6 @@ To be completed/updated
 
 -All of Icebreaker  
 
--User Documentation  
-
 -Test Documentation  
 
 -Technical Documentation  
