@@ -7,7 +7,8 @@ Complete as of 8/10/26
 -Financial Document Locations
 
 
-To be completed/updated
+To be completed/updated  
+
 -All of Labs  
 
 -All of Labrynth
