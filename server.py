@@ -6,7 +6,8 @@ from urllib.parse import urlparse, parse_qs
 
 PORT = 8000
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-MAPS_DIR = os.path.join(ROOT_DIR, 'maps')
+DEFAULT_MAPS_DIR = os.path.join(ROOT_DIR, 'maps')
+MAPS_DIR = DEFAULT_MAPS_DIR if os.path.isdir(DEFAULT_MAPS_DIR) else ROOT_DIR
 
 class SaveMapRequestHandler(SimpleHTTPRequestHandler):
     def end_headers(self):

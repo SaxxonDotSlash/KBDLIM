@@ -426,18 +426,26 @@
             if (mapDataCache[mapKey]) {
                 return Promise.resolve(mapDataCache[mapKey]);
             }
-            var url = 'maps/' + mapKey + '.json?t=' + Date.now();
-            return fetch(url, { cache: 'no-store' })
-                .then(function(response) {
-                    if (!response.ok) {
-                        throw new Error('Could not load map data for ' + mapKey);
-                    }
-                    return response.json();
-                })
-                .then(function(mapInfo) {
-                    mapDataCache[mapKey] = mapInfo;
-                    return mapInfo;
-                });
+            var cacheBuster = '?t=' + Date.now();
+            var candidates = [mapKey + '.json' + cacheBuster, 'maps/' + mapKey + '.json' + cacheBuster];
+
+            function tryLoad(index) {
+                if (index >= candidates.length) {
+                    throw new Error('Could not load map data for ' + mapKey);
+                }
+                return fetch(candidates[index], { cache: 'no-store' })
+                    .then(function(response) {
+                        if (!response.ok) {
+                            return tryLoad(index + 1);
+                        }
+                        return response.json();
+                    });
+            }
+
+            return tryLoad(0).then(function(mapInfo) {
+                mapDataCache[mapKey] = mapInfo;
+                return mapInfo;
+            });
         }
 
         function selectMarker(markerId) {
@@ -476,6 +484,19 @@
                 }
                 return response.json();
             });
+        }
+
+        function isGitHubPagesHost() {
+            return window.location.hostname.endsWith('.github.io');
+        }
+
+        function configureSaveControls() {
+            var saveMapButton = document.getElementById('saveMapBtn');
+            if (isGitHubPagesHost()) {
+                saveMapButton.disabled = true;
+                saveMapButton.title = 'Saving is disabled on GitHub Pages.';
+                setStatus('Read-only mode on GitHub Pages. Saving is disabled.', false);
+            }
         }
 
         function showMap(mapKey) {
@@ -1000,6 +1021,10 @@
         });
 
         document.getElementById('saveMapBtn').addEventListener('click', function() {
+            if (isGitHubPagesHost()) {
+                setStatus('Saving is disabled on GitHub Pages.', true);
+                return;
+            }
             if (!currentMapKey || !currentMapData) {
                 setStatus('No map loaded to save.', true);
                 return;
@@ -1026,6 +1051,7 @@
 
         viewport.addEventListener('click', handleViewportClick);
 
+        configureSaveControls();
         showMap('customs');
     </script>
     <p>Map credits to RE3MR at https://reemr.se/</p>
