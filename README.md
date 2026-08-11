@@ -2,10 +2,6 @@
 
 Static map viewer for Escape From Tarkov document locations.
 
-Complete as of 8/10/26
--Blueprint Document Locations
--Financial Document Locations
-
 
 To be completed/updated  
 
