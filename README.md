@@ -15,12 +15,6 @@ To be completed/updated
 
 -All of Icebreaker  
 
--Test Documentation  
-
--Technical Documentation  
-
--Project Documentation  
-
 -New map for Ground Zero
 
 
